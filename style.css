@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{scroll-behavior: smooth;}
+button{cursor: pointer;}
+:root{
+    --yasil:#53d153;
+}
+.txtag{color: #fff;}
+.txtboz{color: #828181;}
+.txtyasil{color: #207b20;}
+.bgyasilop{background-color: #207b20;}
+.bgyasil{background-color: var(--yasil);}
+.bgag{background-color: #fff;}
+.bgboz{background-color: #f2f1f1;}
+.bgorange{background-color: #ffba00;}
+.bgblue{background-color: #089cea;}
+.bgred{background-color: #f34c03;}
+.pd-span{padding: 2px 6px ; border-radius: 4px;}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*Header Start*/
+header{
+    height: 100vh;
+    background: url(img/headerbg.jpg) center/cover;
+}
+.header-content{
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 30px;
+}
+nav menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+nav menu li a{color: white;}
+nav form{display: flex;}
+#logo{order: -1;}
+#logo a{
+    font:400 2em 'Nautilus Pompilius' ;
+    color: #fff;
+    font-family: "Nautilus Pompilius";
+}
+#search,#btn1{
+    background-color: rgba(255, 255, 255,0.5);
+    border: none;
+    outline: none;
+    padding: 7px 16px;
+    color: black;
+    font-weight: 700;
+}
+#search{border-radius: 15px 0 0 15px;}
+#btn1{border-radius: 0 15px 15px 0;}
+.header-content .center{text-align: center;}
+.header-content .center h1{
+    font: 700 3.4em 'Montserrat';
+    color: #fff;
+}
+.header-content .center button{
+    margin: 15px 0 0 0;
+    border-radius: 1.5em;
+    padding: 14px 23px;
+    border: none;
+    font-weight: 700;
+    border: 2px solid var(--yasil);
+    text-transform: uppercase;
+    transition: 0.4s all;
+}
+.header-content .center button:hover{
+    background-color: transparent;
+    color: var(--yasil);
+    border: 2px solid var(--yasil);
+}
+.bottom{padding-bottom: 15px;}
+#sd-btn{
+    padding: 5px 12px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255,0.5);
+    color: black;
+}
+/*Header End*/
+/*Main Start*/
+main section{
+    padding: 43px 0 0 0;
+    text-align: center;
+}
+main section h2{
+    font: 300 1.3em 'Montserrat';
+    letter-spacing: 4px;
+    color: #828181;
+    text-align: center;
+}
+main section hr{
+    margin: 12px 0;
+    background-color: #828181;
+    max-width: 43px;
+    height: 2px;
+    border: none;
+    margin: auto;
+}
+main section p{
+    font: 1em 'Myriad Pro';
+    color: #b7b3b3;
+    text-align: center;
+}
+main section:nth-child(1) .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 24px 0;
+}
+main section:nth-child(1) .cards article *{margin: 12px;}
+main section:nth-child(1) .cards i{
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 15px;
+    color: #53d153;
+    background-color: #e0f3e0;
+}
+main section:nth-child(1) .cards button{
+    padding: 8px 10px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.buttons button{
+    padding: 10px 15px;
+    border: 1px solid #207b20;
+    color: var(--yasil);
+    font-weight: 700;
+}
+.buttons button:hover{
+    background-color: #207b20;
+    color: #fff; 
+}
+.buttons button:first-child{
+    border-radius: 16px 0 0 16px;
+    background-color: #207b20;
+    color: #fff;
+}
+.buttons button:last-child{border-radius: 0 16px 16px 0;}
+.gallery{
+    margin: auto;
+    max-width:920px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.g-btn{padding-bottom: 50px;}
+.g-btn a{
+    padding: 12px 24px;
+    border-radius: 20px;
+    background-color: #207b20;
+    font-weight: 700;
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 75px 0 18px 0;
+}
+.center2 p{
+    text-align: center;
+    color: black;
+}
+.testimonial-profil{
+    padding: 0 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-profil img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #b7b3b3;
+}
+.clients{
+    padding: 80px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+.brend1,.brend2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 45px;
+}
+.client-btn{
+    padding: 0 0 65px 0;
+}
+.client-btn a{
+    display: inline-block;
+    padding: 12px 33px;
+    border-radius: 20px;
+    background-color: #dddcdc;
+    color: #aca5a5;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 60px 0 ;
+    gap: 50px;
+}
+.team-member img{
+    background-color: white;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-member hr{
+    height: 76px;
+    width: 2px;
+    background-color: #207b20;
+}
+.team-member h4{
+    font:1em 'Proxima Nova';
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+.team-member .social-medial{
+    font-size: 1.5em;
+    padding: 4px 0;
+    border-radius: 24px;
+    background-color: #c5e9c5;
+}
+.fa-basketball{color: #e55d90;}
+.fa-square-behance{color: #0061ff;}
+.fa-twitter{color: #00abed;}
+.otherStaf-btn{
+    background-color: #3eba3e;
+    padding: 27px 0;
+}
+.otherStaf-btn a{
+    padding: 13px 14px ;
+    border-radius: 20px;
+    box-shadow: -1px 1px 5px gray;
+}
+/*Main End*/
+/*Footer Start*/
+.foot-h2{
+    font:300 1em 'Montserrat';
+    letter-spacing: 3px;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+.foot-hr{
+    margin: auto;
+    width: 30px;
+}
+.footer-start{
+    background-color: #333;
+    padding: 27px 0 32px 0;
+}
+.footerStart-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px ;
+}
+.about{
+    flex-basis: 33.33%;
+    text-align: center;
+}
+.about p{
+    font: 1em 'Proxima Nova';
+    line-height: 1.5;
+    color: #ccc;
+    padding: 24px 7px 8px 7px;
+}
+.about .social-medial{
+    width: 83px;
+    border-radius: 14px;
+    padding: 4px 0;
+    margin: auto;
+}
+.recentpost{flex-basis: 33.33%;}
+.recentpost .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 10px 0;
+}
+.recentpost .items img{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.recentpost .text p{
+    font:300 1em 'Montserrat'; 
+    color: #ccc;
+    text-align: center;
+    line-height: 1.5;
+}
+.contact{flex-basis: 33.33%}
+.contactText p , .contactText p a{
+    padding: 15px 0 0 0;
+    text-align: center;
+    font:300 0.9em 'Montserrat';
+    color: #ccc;
+}
+.contact .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 30px 0 0 0;
+}
+.contact .form form input{
+    width: 100%;
+    background-color: #444;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.contact .form form input:first-child{border-radius: 4px 4px 0 0 ;}
+.contact .form form input:nth-child(3){padding:10px 0 100px 10px;}
+.contact .form form button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #2b9b2b;
+    text-transform: uppercase;
+    border-radius: 0 0 4px 4px ;
+}
+.footer-end{background-color: #212121;padding: 25px;}
+.footerBrands{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+/*Footer End*/
+@media only screen and (min-width:768px) {
+    /*Header Start*/
+    #logo a{font-size: 2.4em;}
+    #logo{order: 0;}
+    nav{
+        flex-direction: row;
+        align-items: start;
+    }
+    nav menu{flex-direction: row;}
+    nav menu li:hover a{border-top: 5px solid var(--yasil);}
+    nav menu li:first-child a{
+    font-weight: bold;
+    border-top: 5px solid var(--yasil);}
+    menu, form { flex: 40% }
+    form{justify-content: end;}
+    /*Header end*/
+    /*Main Start*/
+    main section:nth-child(1) .cards{flex-direction: row;}
+    .gallery{flex-direction: row;}
+    .gallery img{
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+    .brend1,.brend2{flex-direction: row;}
+    .team{flex-direction: row;}
+    /*Main End*/
+    /*Footer Start*/
+    .footerStart-content{flex-direction: row;}
+    .footerBrands{flex-direction: row;}
+    /*Footer End*/
+}
